@@ -31,6 +31,7 @@ const Dashboard = () => {
     };
 
     useEffect(() => {
+        console.log("🔍 API URL:", process.env.REACT_APP_API_URL); // ✅ Move this INSIDE useEffect
         fetchTasks();
     }, []);
 
