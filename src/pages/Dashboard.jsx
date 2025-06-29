@@ -14,6 +14,7 @@ const Dashboard = () => {
     const [darkMode, setDarkMode] = useState(() => localStorage.getItem('theme') === 'dark');
 
     const token = localStorage.getItem('token');
+    console.log("🔐 Token:", token);
     const API_URL = process.env.REACT_APP_API_URL;
 
     const fetchTasks = async () => {
